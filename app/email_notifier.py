@@ -1,7 +1,7 @@
 import smtplib
 from email.message import EmailMessage
 from typing import Tuple
-from config import EMAIL_USER, EMAIL_PASS, EMAIL_TO_LIST, EMAIL_HOST, EMAIL_PORT
+from app.config import EMAIL_USER, EMAIL_PASS, EMAIL_TO_LIST, EMAIL_HOST, EMAIL_PORT
 
 def send_email(subject: str, body: str) -> Tuple[bool, str]:
     """

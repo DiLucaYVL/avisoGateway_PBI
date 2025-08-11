@@ -1,8 +1,8 @@
 import logging, requests
-from config import PBI_BEARER, GW_IDS
-from powerbi import get_gateway, is_live
-from whatsapp import evolution_send
-from email_notifier import send_email
+from app.config import PBI_BEARER, GW_IDS
+from app.powerbi import get_gateway, is_live
+from app.whatsapp import evolution_send
+from app.email_notifier import send_email
 
 # ---- Logging ----
 logging.basicConfig(

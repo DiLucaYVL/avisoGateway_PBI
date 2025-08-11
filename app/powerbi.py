@@ -1,5 +1,5 @@
 import requests
-from config import PBI_BASE, PBI_BEARER
+from app.config import PBI_BASE, PBI_BEARER
 
 # Obtém informações do gateway
 def get_gateway(gateway_id: str):

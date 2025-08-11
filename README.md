@@ -30,12 +30,12 @@ Se o e-mail também falhar, a mensagem é salva no arquivo `alert_fallback.log`.
 ## 📂 Estrutura do Projeto
 
 ```plaintext
-.
-├── main.py               # Script principal
-├── config.py             # Leitura de variáveis de ambiente e configurações
-├── powerbi.py            # Funções de integração com API do Power BI
-├── whatsapp.py           # Funções para envio de mensagens via Evolution API
-├── email_notifier.py     # Funções para envio de e-mails via SMTP
+├───app/
+    ├── main.py               # Script principal
+    ├── config.py             # Leitura de variáveis de ambiente e configurações
+    ├── powerbi.py            # Funções de integração com API do Power BI
+    ├── whatsapp.py           # Funções para envio de mensagens via Evolution API
+    ├── email_notifier.py     # Funções para envio de e-mails via SMTP
 ├── requirements.txt      # Dependências Python
 ├── .env                  # Variáveis de ambiente
 └── alert_fallback.log    # Log de fallback (gerado em caso de falha de envio)
