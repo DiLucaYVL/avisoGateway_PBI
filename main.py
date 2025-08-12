@@ -1,5 +1,5 @@
 import logging, requests
-from app.config import PBI_BEARER, GW_IDS
+from app.config import GW_IDS
 from app.powerbi import get_gateway, is_live
 from app.whatsapp import evolution_send
 from app.email_notifier import send_email
@@ -25,9 +25,6 @@ def _fallback_email_then_file(subject: str, body: str):
 
 # Função main
 def main():
-    if not PBI_BEARER or not PBI_BEARER.lower().startswith("bearer "):
-        raise SystemExit("Defina PBI_BEARER no .env (incluindo 'Bearer ').")
-
     for gid in GW_IDS:
         if not gid:
             continue
