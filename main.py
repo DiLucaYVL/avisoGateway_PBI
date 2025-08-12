@@ -38,7 +38,7 @@ def main():
             if not is_live(status):
                 subject = "[ALERTA] Power BI Gateway offline"
                 msg = (
-                    "----------------- [ALERTA: POWER BI] -----------------\n\n"
+                    "-- [ALERTA: POWER BI] --\n\n"
                     f"> Gateway: {name}\n"
                     f"> ID: {gid}\n"
                     f"> Status: {status or 'desconhecido'}\n"
