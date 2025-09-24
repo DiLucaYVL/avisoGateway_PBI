@@ -110,7 +110,3 @@ Para rodar automaticamente **a cada 15 minutos, de segunda a sábado, das 08:00 
 3. Salve e teste a tarefa.
 
 ---
-
-## 📜 Licença
-
-Este projeto é de uso interno do Grupo Top Fama.
